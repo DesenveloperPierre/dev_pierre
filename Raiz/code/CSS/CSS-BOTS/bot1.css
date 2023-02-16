@@ -1,0 +1,107 @@
+.conteiner{
+    padding-bottom: 6.5%;
+}
+
+.text-product{
+    text-align: center;
+    padding-left: 15%;
+    display: inline-block;
+    padding-right: 16%;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+}
+
+.botao{
+    padding-top: 3%;
+    padding-left: 10%;
+}
+
+.bnt {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: rgb(255, 255, 255);
+    color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.bnt:hover {
+    background: rgb(255, 255, 255);
+    color: #000;
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+p, h1, h2{
+    padding-top: 50px;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+h2{
+    font-weight: 100;
+}
+
+p{
+    font-weight: 500;
+}
+
+p:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h1:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.cards {
+    perspective: 500px;
+}
+
+.card {
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    background: #16161d;
+    border: 2px solid #555555;
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+}
+
+.card:hover {
+    transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+}
+
+.card_title {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    transition: transform .5s;
+    font: 700 1.5rem monospace;
+    text-shadow: -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.card:hover .card_title {
+    transform: translateZ(50px);
+}
